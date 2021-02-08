@@ -25,24 +25,24 @@ showMessage.innerHTML = `
 Вы ввели цифры: 1, 0 ,9
 Сумма: 10 */
 
-/* let enteredNumber = +prompt("Enter number ***");
-let num = enteredNumber;
+/* let num = +prompt("Enter number ***");
+let enteredNumber = num;
 let sum = 0;
 let showMessage2 = document.getElementById("test2");
 
-while (enteredNumber) {
-  sum = sum + Math.floor(enteredNumber % 10);
-  enteredNumber = Math.floor(enteredNumber / 10);
+while (num) {
+  sum += num % 10;
+  num = Math.floor(num / 10);
 }
 
 showMessage2.innerHTML = `
 <div>
-  Вы ввели: ${num}
+  Вы ввели: ${enteredNumber}
 </div>
 <div>
-  Вы ввели цифры: ${num
+  Вы ввели цифры: ${enteredNumber
     .toString()
-    .split("")} не знаю, як нормально можна вивести всі числа 
+    .split("")} --- не знаю, як нормально можна вивести всі числа 
 </div>
 <div> 
   Сумма: ${sum}
@@ -55,7 +55,7 @@ showMessage2.innerHTML = `
 Будет сформировано <Результат> классов.
 Значение и Результат  - должны быть выделены жирным */
 
-let students = +prompt("How many students are entering?");
+/* let students = +prompt("How many students are entering?");
 let classes = 0;
 let showMessage3 = document.getElementById("test3");
 
@@ -69,4 +69,4 @@ showMessage3.innerHTML = `
 </div>
 <div>
   Будет сформировано <b>${classes}</b> классов.
-</div>`;
+</div>`; */
