@@ -25,7 +25,7 @@ showMessage.innerHTML = `
 Вы ввели цифры: 1, 0 ,9
 Сумма: 10 */
 
-let enteredNumber = +prompt("Enter number ***");
+/* let enteredNumber = +prompt("Enter number ***");
 let num = enteredNumber;
 let sum = 0;
 let showMessage2 = document.getElementById("test2");
@@ -46,4 +46,27 @@ showMessage2.innerHTML = `
 </div>
 <div> 
   Сумма: ${sum}
+</div>`; */
+
+/* 3. Попросите пользователя ввести количество учеников поступающих в первый класс.  В одном классе может обучатся максимум 30 человек. Вывести на экран количество классов.
+Для вывода не использовать console или alert.
+Формат вывода
+В первый класс поступает <Значение, которое ввел пользователь>
+Будет сформировано <Результат> классов.
+Значение и Результат  - должны быть выделены жирным */
+
+let students = +prompt("How many students are entering?");
+let classes = 0;
+let showMessage3 = document.getElementById("test3");
+
+if (students > 0) {
+  classes = Math.ceil(students / 30);
+}
+
+showMessage3.innerHTML = `
+<div>
+  В первый класс поступает <b>${students}</b> учеников.
+</div>
+<div>
+  Будет сформировано <b>${classes}</b> классов.
 </div>`;
